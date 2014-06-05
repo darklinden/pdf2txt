@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6066622D-10AE-48C5-9CD5-FC3B032716EC}</ProjectGuid>
+    <RootNamespace>pdftotext</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="xpdf-3.03\fofi\FoFiBase.cc" />
+    <ClCompile Include="xpdf-3.03\fofi\FoFiEncodings.cc" />
+    <ClCompile Include="xpdf-3.03\fofi\FoFiIdentifier.cc" />
+    <ClCompile Include="xpdf-3.03\fofi\FoFiTrueType.cc" />
+    <ClCompile Include="xpdf-3.03\fofi\FoFiType1.cc" />
+    <ClCompile Include="xpdf-3.03\fofi\FoFiType1C.cc" />
+    <ClCompile Include="xpdf-3.03\goo\gfile.cc" />
+    <ClCompile Include="xpdf-3.03\goo\GHash.cc" />
+    <ClCompile Include="xpdf-3.03\goo\GList.cc" />
+    <ClCompile Include="xpdf-3.03\goo\gmem.cc" />
+    <ClCompile Include="xpdf-3.03\goo\gmempp.cc" />
+    <ClCompile Include="xpdf-3.03\goo\GString.cc" />
+    <ClCompile Include="xpdf-3.03\goo\parseargs.c" />
+    <ClCompile Include="xpdf-3.03\xpdf\Annot.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Array.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\BuiltinFont.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\BuiltinFontTables.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Catalog.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\CharCodeToUnicode.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\CMap.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Decrypt.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Dict.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Error.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\FontEncodingTables.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Function.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Gfx.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\GfxFont.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\GfxState.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\GlobalParams.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\JArithmeticDecoder.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\JBIG2Stream.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\JPXStream.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Lexer.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Link.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\NameToCharCode.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Object.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\OptionalContent.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Outline.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\OutputDev.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Page.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Parser.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\PDFDoc.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\PDFDocEncoding.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\pdftotext.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\PSTokenizer.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\SecurityHandler.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\Stream.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\TextOutputDev.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\UnicodeMap.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\UnicodeTypeTable.cc" />
+    <ClCompile Include="xpdf-3.03\xpdf\XRef.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xpdf-3.03\aconf.h" />
+    <ClInclude Include="xpdf-3.03\fofi\FoFiBase.h" />
+    <ClInclude Include="xpdf-3.03\fofi\FoFiEncodings.h" />
+    <ClInclude Include="xpdf-3.03\fofi\FoFiIdentifier.h" />
+    <ClInclude Include="xpdf-3.03\fofi\FoFiTrueType.h" />
+    <ClInclude Include="xpdf-3.03\fofi\FoFiType1.h" />
+    <ClInclude Include="xpdf-3.03\fofi\FoFiType1C.h" />
+    <ClInclude Include="xpdf-3.03\goo\gfile.h" />
+    <ClInclude Include="xpdf-3.03\goo\GHash.h" />
+    <ClInclude Include="xpdf-3.03\goo\GList.h" />
+    <ClInclude Include="xpdf-3.03\goo\gmem.h" />
+    <ClInclude Include="xpdf-3.03\goo\GString.h" />
+    <ClInclude Include="xpdf-3.03\goo\parseargs.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Annot.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Array.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\BuiltinFont.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\BuiltinFontTables.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Catalog.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\CharCodeToUnicode.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\CMap.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Decrypt.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Dict.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Error.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\FontEncodingTables.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Function.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Gfx.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\GfxFont.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\GfxState.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\GlobalParams.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\JArithmeticDecoder.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\JBIG2Stream.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\JPXStream.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Lexer.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Link.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\NameToCharCode.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Object.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\OptionalContent.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Outline.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\OutputDev.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Page.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Parser.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\PDFDoc.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\PDFDocEncoding.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\PSTokenizer.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\SecurityHandler.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\Stream.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\TextOutputDev.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\UnicodeMap.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\UnicodeTypeTable.h" />
+    <ClInclude Include="xpdf-3.03\xpdf\XRef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
